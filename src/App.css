@@ -7,3 +7,15 @@
 .bold {
   font-weight: bold;
 }
+.button {
+  background-color: green;
+  color: white;
+  font-family: "Helvetica";
+  border: 1px solid blue;
+  padding: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: lightgreen;
+  color: #000;
+}
