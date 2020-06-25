@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-//import classes from "./App.css";
-import "./App.css";
+import classes1 from "./App.module.css";
+
 import Person from "./Person/Person";
 
 class App extends Component {
@@ -76,7 +76,7 @@ class App extends Component {
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p className={classes.join(" ")}>This is really working!</p>
-        <button className="Button" onClick={this.togglePersonsHandler}>
+        <button className={classes1.Button} onClick={this.togglePersonsHandler}>
           Switch Name
         </button>
         {persons}
