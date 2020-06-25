@@ -1,21 +1,6 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import "./App.css";
+import classes from "./App.css";
 import Person from "./Person/Person";
-
-const StyledButton = styled.button`
-  background-color: ${props => (props.alt ? "red" : "green")};
-  color: white;
-  font-family: "Helvetica";
-  border: 1px solid blue;
-  padding: 8px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${props => (props.alt ? "salmon" : "lightgreen")};
-    color: #000;
-  }
-`;
 
 class App extends Component {
   state = {
@@ -90,11 +75,7 @@ class App extends Component {
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p className={classes.join(" ")}>This is really working!</p>
-        <button
-          className="button"
-          alt={this.state.showPersons}
-          onClick={this.togglePersonsHandler}
-        >
+        <button className={classes.Button} onClick={this.togglePersonsHandler}>
           Switch Name
         </button>
         {persons}
