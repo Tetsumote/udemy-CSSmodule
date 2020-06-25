@@ -13,7 +13,7 @@ const StyledButton = styled.button`
 
   &:hover {
     background-color: ${props => (props.alt ? "salmon" : "lightgreen")};
-    color: black;
+    color: #000;
   }
 `;
 
